@@ -1,0 +1,99 @@
+{
+  "id": 1,
+  "parent": "Table 1",
+  "label": "Table 1",
+  "leaf": true,
+  "children": [
+    {
+      "id": 1,
+      "parent": "Entity 1",
+      "label": "Entity 1",
+      "leaf": true,
+      "properties": [
+        {
+          "id": 1,
+          "parent": "Property 1",
+          "label": "Property 1",
+          "type": "string"
+        },
+        {
+          "id": 2,
+          "parent": "Property 2",
+          "label": "Property 2",
+          "type": "number"
+        }
+      ],
+      "children": [
+        {
+          "id": 1,
+          "parent": "SubEntity 1",
+          "label": "SubEntity 1",
+          "leaf": true,
+          "properties": [
+            {
+              "id": 3,
+              "parent": "SubProperty 1",
+              "label": "SubProperty 1",
+              "type": "boolean"
+            },
+            {
+              "id": 4,
+              "parent": "SubProperty 2",
+              "label": "SubProperty 2",
+              "type": "date"
+            }
+          ],
+          "children": [
+            {
+              "id": 2,
+              "parent": "SubSubEntity 1",
+              "label": "SubSubEntity 1",
+              "leaf": true,
+              "properties": [
+                {
+                  "id": 5,
+                  "parent": "SubSubProperty 1",
+                  "label": "SubSubProperty 1",
+                  "type": "string"
+                },
+                {
+                  "id": 6,
+                  "parent": "SubSubProperty 2",
+                  "label": "SubSubProperty 2",
+                  "type": "number"
+                }
+              ],
+              "children": [
+                {
+                  "id": 3,
+                  "parent": "SubSubSubEntity 1",
+                  "label": "SubSubSubEntity 1",
+                  "leaf": true,
+                  "properties": [
+                    {
+                      "id": 7,
+                      "parent": "SubSubSubProperty 1",
+                      "label": "SubSubSubProperty 1",
+                      "type": "boolean"
+                    },
+                    {
+                      "id": 8,
+                      "parent": "SubSubSubProperty 2",
+                      "label": "SubSubSubProperty 2",
+                      "type": "date"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "parent": "Entity 10",
+          "label": "Entity 10"
+        }
+      ]
+    }
+  ]
+}

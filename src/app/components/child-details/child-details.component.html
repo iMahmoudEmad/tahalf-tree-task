@@ -1,0 +1,39 @@
+<div class="child" [style.display]="entity?.label ? 'block' : 'none'">
+  <div class="body">
+    <form>
+      <div class="form-control">
+        <label class="label" for="componentName">
+          {{ entity?.label }}
+          <input
+            type="text"
+            id="componentName"
+            class="input"
+            placeholder="Text box"
+            [value]="entity?.label"
+            autofocus
+          />
+        </label>
+      </div>
+
+      <div
+        class="form-control"
+        *ngIf="entity?.children?.length || entity?.properties?.length"
+      >
+        <p-tree
+          class="md:w-20rem w-full"
+          containerStyleClass="w-full"
+          placeholder="Select Item"
+          [value]="entity.children"
+        >
+        </p-tree>
+      </div>
+
+      <div class="form-control">
+        <button type="button" class="btn cancel" (click)="entity = {}">
+          cancel
+        </button>
+        <button type="button" class="btn save">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
